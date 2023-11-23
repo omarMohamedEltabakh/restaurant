@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for ordering meals</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="spin d-flex justify-content-center align-items-center d-none">
+        <i class="fa-solid fa-spinner  fa-spin "></i>
+    </div>
+
+
+
+    <div id="sideBar" class="sideBar d-flex ">
+        <div class=" d-flex flex-column w-100 justify-content-between">
+            <ul class="  d-flex  flex-column justify-content-between w-100 ">
+                <li id="search">search</li>
+                <li id="category">Category</li>
+                <li id="area">Area</li>
+                <li id="Ingredinets">Ingredients</li>
+                <li id="Contact">Contact Us</li>
+            </ul>
+            <div class="footer  ps-3 pb-3">
+                <div class="footerIcons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter "></i>
+                    <i class="fa-solid fa-globe mb-1 "></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+
+
+        <div class="bg-white divLogo w-25 align-items-center pb-4 d-flex flex-column justify-content-between">
+
+            <img src="imges/logo.png" class="logo  mt-4" alt="">
+
+            <i class="fa-solid fa-xmark text-black fs-1 closeBar d-flex"></i>
+            <i class="fa-solid  fa-2x fa-align-justify text-black closeBar d-none menuBar"></i>
+
+
+
+            <div class="text-black d-flex flex-column">
+                <i class="fa-solid fa-globe mb-1 "></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="d-block ">
+
+        <div class="container pb-5 home d-block ">
+            <div class="row d-flex gy-4  pt-5 homeInner">
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="container pb-5 search d-none d-block">
+            <div class="search d-flex pt-3  align-items-center justify-content-center">
+                <input id="searchInput" class="form-control me-4 text-white " type="text " placeholder="Search by Name">
+                <input id="sLitterInput" class="form-control text-white " type="text "
+                    placeholder="Search by Firt Letter">
+            </div>
+            <div class="row d-flex gy-4  pt-5 innerSearch ">
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="container pb-5  d-none category d-block ">
+            <div class="row d-flex gy-4  pt-5 categoryInner">
+
+
+            </div>
+        </div>
+
+        <div class="mealDetails d-none d-block">
+            <div class="container pt-5">
+                <div class="row text-white detailsInner">
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="areaSection" class=" d-none  area d-block">
+            <div class="container pb-5  ">
+
+                <div class="row d-flex gy-3  pt-5 areaInner d-inline">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="American" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="American">American</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="British" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="British">British</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Canadian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Canadian">Canadian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Chinese" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Chinese">Chinese</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Croatian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Croatian">Croatian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Dutch" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Dutch">Dutch</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Egyption" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Egyption">Egyption</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Filipino" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Filipino">Filipino</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="French" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="French">French</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Greek" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Greek">Greek</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Indian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Indian">Indian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Irish" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Irish">Irish</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Itailian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Itailian">Itailian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Jamaican" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Jamaican">Jamaican</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Japanese" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Japanese">Japanese</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Japanese" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Japanese">Kenyan</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Malaysian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Malaysian">Malaysian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Mexican" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Mexican">Mexican</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Moroccan" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Moroccan">Moroccan</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Polish" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Polish">Polish</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Portuguese" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Portuguese">Portuguese</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Russian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Russian">Russian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Spanish" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Spanish">Spanish</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Thai" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Thai">Thai</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Tunisian" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Tunisian">Tunisian</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Turkish" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Turkish">Turkish</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Unknown" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Unknown">Unknown</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 areaName">
+                        <div class="item text-center text-white">
+                            <i id="Vietnamese" class="fa-solid fa-house-laptop fa-4x areaIcons"></i>
+                            <h2 id="Vietnamese">Vietnamese</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-3  pt-5 mealsForArea border-0">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ingredient d-none d-block">
+            <div class="container pb-5   ">
+                <div class="row d-flex gy-3  pt-5 igredientInner text-white text-center d-block">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Chicken" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Chicken">Chicken</h2>
+                            <p id="Chicken">The chicken is a type of domesticated fowl, a subspecies of the red
+                                junglefowl (Gallus
+                                gallus). It is one of</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Salmon" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Salmon">Salmon</h2>
+                            <p id="Salmon">Salmon is the common name for several species of ray-finned fish in the
+                                family Salmonidae. Other fish in the same</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Beef" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Beef">Beef</h2>
+                            <p id="Beef">Beef is the culinary name for meat from cattle, particularly skeletal muscle.
+                                Humans have been eating beef since prehistoric times.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Prok" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Prok">Pork</h2>
+                            <p id="Prok">Pork is the culinary name for the flesh of a domestic pig (Sus scrofa
+                                domesticus). It is the most commonly</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Avocado" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Avocado">Avocado</h2>
+                            <p id="Avocado">The avocado, a tree with probable origin in South Central Mexico, is
+                                classified as a member of the flowering plant</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Apple Cider Vinegar" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Apple Cider Vinegar">Apple Cider Vinegar</h2>
+                            <p id="Apple Cider Vinegar">Apple cider vinegar, or cider vinegar, is a vinegar made from
+                                fermented apple juice, and used in salad dressings, marinades,</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="asparagus" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="asparagus">Asparagus</h2>
+                            <p id="asparagus">Asparagus, or garden asparagus, folk name sparrow grass, scientific name
+                                Asparagus officinalis, is a perennial flowering plant species in the</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Aubergine" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Aubergine">Aubergine</h2>
+                            <p id="Aubergine">Eggplant (US, Australia), aubergine (UK), or brinjal (South Asia and South
+                                Africa) is a plant species in the nightshade family</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Baby Plum Tomatoes" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Baby Plum Tomatoes">Baby Plum Tomatoes</h2>
+                            <p id="Baby Plum Tomatoes">The tomato is the edible, often red, berry of the plant Solanum
+                                lycopersicum, commonly known as a tomato plant. The</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Bacon" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Bacon">Bacon</h2>
+                            <p id="Bacon">Bacon is a type of salt-cured pork. Bacon is prepared from several different
+                                cuts of meat, typically from the pork</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Baking" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Baking">Baking Powder</h2>
+                            <p id="Baking">Baking powder is a dry chemical leavening agent, a mixture of a carbonate or
+                                bicarbonate and a weak acid. The</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Bslsamic Vinegar" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Bslsamic Vinegar">Bslsamic Vinegar</h2>
+                            <p id="Bslsamic Vinegar">Balsamic vinegar (Italian: aceto balsamico), occasionally shortened
+                                to balsamic, is a very dark, concentrated, and intensely flavoured vinegar originating
+                                in</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Basil" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Basil">Basil</h2>
+                            <p id="Basil">Basil, also called great basil, is a culinary herb of the family Lamiaceae
+                                (mints). Basil is native to tropical regions from</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Basil leaves" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Basil leaves">Basil Leaves</h2>
+                            <p id="Basil leaves">The bay leaf is an aromatic leaf commonly used in cooking. It can be
+                                used whole, or as dried and</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Basmati Rice" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Basmati Rice">Basmati Rice</h2>
+                            <p id="Basmati Rice">Basil, also called great basil, is a culinary herb of the family
+                                Lamiaceae (mints).</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Bay leaf" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Bay leaf">Bay leaf</h2>
+                            <p id="Bay leaf">Basmati is a variety of long, slender-grained aromatic rice which is
+                                traditionally from the Indian subcontinent. As of 2018-19, India</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="bay leaves" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="bay leaves">Bay leaves</h2>
+                            <p id="bay leaves">The bay leaf is an aromatic leaf commonly used in cooking. It can be used
+                                whole, or as dried and</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Beef Brisket" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Beef Brisket">Beef Brisket</h2>
+                            <p id="Beef Brisket">Beef is the culinary name for meat from cattle, particularly skeletal
+                                muscle. Humans have been eating beef since prehistoric times.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="Beff Fillet" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="Beff Fillet">Beff Fillet</h2>
+                            <p id="Beff Fillet">Beef is the culinary name for meat from cattle, particularly skeletal
+                                muscle. Humans have been eating beef since prehistoric times</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 ingredinetName">
+                        <div class="item">
+                            <i id="beef Gravy" class="fa-solid fa-drumstick-bite fa-4x"></i>
+                            <h2 id="beef Gravy">beef Gravy</h2>
+                            <p id="beef Gravy">Beef is the culinary name for meat from cattle, particularly skeletal
+                                muscle. Humans have been eating beef since prehistoric times.</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="row ingredinetMeals gy-3  pt-5 border-0">
+
+                </div>
+            </div>
+        </div>
+
+        <form id="form" class=" d-none form d-block ">
+
+            <div class=" vh-100   d-flex   flex-column  justify-content-center align-items-center w-75  mx-auto ">
+
+                <div class="row  d-flex mx-auto ps-4">
+
+                    <div class=" col-md-6 col-xxl 6   col-12 flex-column gap-3  d-flex align-items-center justify-content-centermt-3 mt-3  ">
+                        
+
+                        <input id="uName" class="form-control" type="text" placeholder="Enter your Name">
+                        <p class="checkIinput d-none">Special characters and numbers not allowed</p>
+
+                        <input id="uPhone" class="form-control " type="number" placeholder="Enter your Phone">
+                        <p class="checkIinput d-none">Enter valid Phone Number</p>
+
+                        <input id="uPassword" class="form-control " type="password" placeholder="Enter your Password">
+                        <p class="checkIinput d-none">Enter valid password *Minimum eight characters, at least one
+
+                    </div>
+
+                    <div class=" col-md-6 col-xxl 6   col-12 flex-column gap-3  d-flex align-items-center justify-content-centermt-3 mt-3">
+                        
+
+                        <input id="uEmail" class="form-control " type="email" placeholder="Enter Your Email">
+                        <p class="checkIinput d-none">Email not valid *exemple@yyy.zzz</p>
+
+
+
+
+                        <input id="uAge" class="form-control " type="number" placeholder="Enter Your Age">
+                        <p class="checkIinput d-none">Enter valid age</p>
+
+
+
+
+                        <input id="repassword" class="form-control " type="password" placeholder="Repassword">
+                        <p class="checkIinput d-none">Enter valid repassword</p>
+
+                    </div>
+
+
+                    <div class="d-flex justify-content-center ">
+                        <button id="submit" class="btn btn-outline-danger mt-4 disabled">submit</button>
+                    </div>
+                </div>
+                
+                
+                
+                
+             
+            </div>
+           
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

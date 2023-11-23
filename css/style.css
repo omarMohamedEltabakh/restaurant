@@ -1,0 +1,156 @@
+section {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.layer {
+    background-color: #f9f6f6ca;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: .6s;
+}
+
+
+.layerAndImg:hover .layer {
+    top: 0;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sideBar {
+    height: 100vh;
+    width: 330px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #0d0d0d;
+    color: white;
+
+}
+
+.sideBar ul {
+    height: 200px;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 80%;
+}
+
+.closeBar {
+    cursor: pointer;
+}
+
+input {
+    width: 500px !important;
+    background-color: inherit !important;
+}
+
+input::placeholder {
+    color: #60757d !important;
+}
+
+.mealDetails {
+    background-color: #000000;
+    min-height: 130vh;
+
+}
+
+.pragraphs p {
+    width: fit-content;
+    background-color: #cff4fc;
+    color: #30696f;
+    padding: 5px 5px;
+    border-radius: 5px;
+
+
+}
+
+.btnSource {
+    background-color: #198754;
+    border: #198754;
+    color: white;
+}
+
+.btnSource:hover {
+    background-color: #157347;
+    border: #198754;
+    color: white;
+}
+
+.tag p {
+    background-color: #f8d7da;
+    color: #932029;
+    padding: 5px 5px;
+
+
+}
+
+
+.areaIcons {
+    cursor: pointer;
+    font-size: 64px;
+}
+
+.area {
+    background-color: #0d0d0d;
+}
+
+.ingredient {
+    background-color: #0d0d0d;
+}
+
+
+
+.submitBtn {
+    width: 6%;
+}
+.borderMe{
+    border: solid 3px red;
+}
+
+
+
+form>div input {
+    width: 300px !important;
+    background-color: white !important;
+}
+
+
+
+.checkIinput {
+    background-color: #f8d7da;
+    padding: 18px 15px;
+    border-radius: 7px;
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    color: #842029;
+
+}
+
+.spin i {
+    font-size: 100px;
+    color: white;
+}
+
+.spin {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: black;
+}
